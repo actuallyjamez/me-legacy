@@ -1,11 +1,20 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {motion} from 'framer-motion'
 import Head from 'next/head'
 import * as cn from 'classnames'
 import Screen from '../components/Screen'
 import {FaGithub, FaSoundcloud, FaTwitter} from 'react-icons/fa'
 
-const Home = ({color}) => {
+const Home = () => {
+  const [color, setColor] = useState('black')
+
+  const colors = ['red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'pink']
+
+  useEffect(() => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)]
+    setColor(randomColor)
+  })
+
   const variants = {
     parent: {
       initial: {},
@@ -51,7 +60,6 @@ const Home = ({color}) => {
           transition: {
             staggerChildren: 0.1,
             delayChildren: 0.3
-
           }
         }
       },
@@ -109,12 +117,6 @@ const Home = ({color}) => {
       </Screen>
     </div>
   )
-}
-
-Home.getInitialProps = () => {
-  const colors = ['red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'pink']
-  const color = colors[Math.floor(Math.random() * colors.length)]
-  return {color}
 }
 
 export default Home
