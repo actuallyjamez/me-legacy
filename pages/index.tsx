@@ -76,6 +76,7 @@ const Home = ({color}) => {
       <Head>
         <title>James Morris</title>
         <link rel="icon" href="/favicon.ico"/>
+        <meta name="James Morris"/>
       </Head>
       <Screen>
         <motion.div variants={variants.parent} initial="initial" animate="visible"
@@ -89,17 +90,17 @@ const Home = ({color}) => {
           </div>
           <motion.div className="flex justify-around mt-6" variants={variants.socials.parent}>
             <motion.div variants={variants.socials.child}>
-              <a href="https://github.com/actuallyjamez">
+              <a href="https://github.com/actuallyjamez" aria-label="Github">
                 <FaGithub className="text-4xl mx-6 cursor-pointer hover:text-green-600"/>
               </a>
             </motion.div>
             <motion.div variants={variants.socials.child}>
-              <a href="https://twitter.com/actuallyjamez">
+              <a href="https://twitter.com/actuallyjamez" aria-label="Twitter">
                 <FaTwitter className="text-4xl mx-6 cursor-pointer hover:text-blue-600"/>
               </a>
             </motion.div>
             <motion.div variants={variants.socials.child}>
-              <a href="https://soundcloud.com/actuallyjamez">
+              <a href="https://soundcloud.com/actuallyjamez" aria-label="SoundCloud">
                 <FaSoundcloud className="text-4xl mx-6 cursor-pointer hover:text-orange-600"/>
               </a>
             </motion.div>
