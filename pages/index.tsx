@@ -76,7 +76,7 @@ const Home = ({color}) => {
       <Head>
         <title>James Morris</title>
         <link rel="icon" href="/favicon.ico"/>
-        <meta name="James Morris"/>
+        <meta name="Description" content="James Morris"/>
       </Head>
       <Screen>
         <motion.div variants={variants.parent} initial="initial" animate="visible"
