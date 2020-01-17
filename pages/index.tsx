@@ -4,6 +4,7 @@ import Head from 'next/head'
 import * as cn from 'classnames'
 import Screen from '../components/Screen'
 import {FaGithub, FaSoundcloud, FaTwitter} from 'react-icons/fa'
+import * as rand from 'math-random'
 
 const Home = () => {
   const [color, setColor] = useState('black')
@@ -11,7 +12,7 @@ const Home = () => {
   const colors = ['red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'pink']
 
   useEffect(() => {
-    const randomColor = colors[Math.floor(Math.random() * colors.length)]
+    const randomColor = colors[Math.floor(rand() * colors.length)]
     setColor(randomColor)
   })
 
@@ -118,5 +119,7 @@ const Home = () => {
     </div>
   )
 }
+
+// Home.getInitialProps = () => ({})
 
 export default Home
