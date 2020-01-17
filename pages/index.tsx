@@ -74,7 +74,7 @@ const Home = ({color}) => {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>James Morris</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <Screen>
