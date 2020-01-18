@@ -114,19 +114,19 @@ const Home = () => {
               sometimes.
             </motion.h1>
           </div>
-          <motion.div className="flex justify-around mt-6" variants={variants.socials.parent}>
+          <motion.div className="flex justify-around mt-6"  variants={variants.socials.parent}>
             <motion.div variants={variants.socials.child}>
-              <a href="https://github.com/actuallyjamez" aria-label="Github">
+              <a href="https://github.com/actuallyjamez" target="_blank" aria-label="Github">
                 <FaGithub className="text-4xl mx-6 cursor-pointer hover:text-green-600"/>
               </a>
             </motion.div>
             <motion.div variants={variants.socials.child}>
-              <a href="https://twitter.com/actuallyjamez" aria-label="Twitter">
+              <a href="https://twitter.com/actuallyjamez" target="_blank" aria-label="Twitter">
                 <FaTwitter className="text-4xl mx-6 cursor-pointer hover:text-blue-600"/>
               </a>
             </motion.div>
             <motion.div variants={variants.socials.child}>
-              <a href="https://soundcloud.com/actuallyjamez" aria-label="SoundCloud">
+              <a href="https://soundcloud.com/actuallyjamez" target="_blank" aria-label="SoundCloud">
                 <FaSoundcloud className="text-4xl mx-6 cursor-pointer hover:text-orange-600"/>
               </a>
             </motion.div>
