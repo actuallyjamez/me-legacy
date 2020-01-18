@@ -8,10 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "classnames": "^2.2.6",
     "framer-motion": "^1.7.0",
-    "math-random": "^1.0.4",
     "next": "9.2.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
@@ -22,7 +19,6 @@
     "@types/node": "^13.1.8",
     "@types/react": "^16.9.17",
     "autoprefixer": "^9.7.4",
-    "cssnano": "^4.1.10",
     "postcss-loader": "^3.0.0",
     "tailwindcss": "^1.1.4",
     "typescript": "^3.7.5"
