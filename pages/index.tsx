@@ -9,12 +9,6 @@ import * as rand from 'math-random'
 const Home = () => {
   const [color, setColor] = useState('black')
 
-  const colors = ['red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'pink']
-
-  useEffect(() => {
-    const randomColor = colors[Math.floor(rand() * colors.length)]
-    setColor(randomColor)
-  })
 
   const variants = {
     parent: {
@@ -22,6 +16,26 @@ const Home = () => {
       visible: {
         transition: {
           staggerChildren: 0.2
+        }
+      }
+    },
+    emote: {
+      initial: {
+        opacity: 0,
+        y: 15,
+        scale: 0.98
+      },
+      visible: {
+        opacity: 1,
+        y: 0,
+        x: [0, 0, 0, 0, -1, 1, -1, 1, -1, 1, 0],
+        rotate: [0, 0, 0, 0, -10, 10, -10, 10, -10, 10, 0],
+
+        scale: [1, 1.1, 1],
+        transition: {
+          duration: .8,
+          ease: 'easeInOut',
+          type: 'spring'
         }
       }
     },
@@ -36,7 +50,8 @@ const Home = () => {
         y: 0,
         scale: 1,
         transition: {
-          ease: 'easeOut'
+          ease: 'easeOut',
+          type: 'spring'
         }
       }
     },
@@ -50,7 +65,8 @@ const Home = () => {
         y: 0,
         transition: {
           // duration: .6,
-          ease: 'easeOut'
+          ease: 'easeOut',
+          type: 'spring'
         }
       }
     },
@@ -73,7 +89,8 @@ const Home = () => {
           opacity: 1,
           y: 0,
           transition: {
-            ease: 'easeOut'
+            ease: 'easeOut',
+            type: 'spring'
           }
         }
       }
@@ -91,8 +108,8 @@ const Home = () => {
         <motion.div variants={variants.parent} initial="initial" animate="visible"
                     className="h-full flex flex-col items-center justify-center text-center">
           <div>
-            <motion.h1 variants={variants.title} className="font-bold text-5xl md:text-6xl">Hey, I'm <span
-              className={cn('text-red-600', `text-${color}-600`)}>James.</span></motion.h1>
+            <motion.h1 variants={variants.emote} className="font-bold text-5xl md:text-6xl">👋</motion.h1>
+            <motion.h1 variants={variants.title} className="font-bold text-5xl md:text-6xl">Hey, I'm James.</motion.h1>
             <motion.h1 variants={variants.child} className="font-semibold text-2xl md:text-3xl">I make things
               sometimes.
             </motion.h1>
