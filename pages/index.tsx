@@ -102,7 +102,7 @@ const Home = () => {
       <Head>
         <title>James Morris</title>
         <link rel="icon" href="/favicon.ico"/>
-        <meta name="Description" content="James Morris"/>
+        <meta name="Description" content="Hey, I'm James. I make things."/>
       </Head>
       <Screen>
         <motion.div variants={variants.parent} initial="initial" animate="visible"
