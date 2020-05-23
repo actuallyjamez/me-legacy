@@ -1,6 +1,6 @@
 {
-  "name": "me",
-  "version": "0.1.1",
+  "name": "new-me",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,19 +8,19 @@
     "start": "next start"
   },
   "dependencies": {
-    "framer-motion": "^1.11.0",
-    "next": "9.4.2",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-icons": "^3.10.0"
+    "framer-motion": "^1.7.0",
+    "next": "9.3.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-icons": "^3.8.0"
   },
   "devDependencies": {
-    "@types/node": "^14.0.5",
-    "@types/react": "^16.9.35",
-    "autoprefixer": "^9.8.0",
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "@types/node": "^13.1.8",
+    "@types/react": "^16.9.17",
+    "autoprefixer": "^9.7.4",
     "postcss-loader": "^3.0.0",
-    "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.4.6",
-    "typescript": "^3.9.3"
+    "tailwindcss": "^1.1.4",
+    "typescript": "^3.7.5"
   }
 }
