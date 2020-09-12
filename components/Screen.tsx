@@ -1,9 +1,9 @@
-import React, {Fragment} from 'react'
+import React from "react";
 
-const Screen = ({children}) => (
+const Screen = ({ children }) => (
   <div>
     {children}
-    { /*language=SCSS*/}
+    {/*language=SCSS*/}
     <style jsx>{`
       div {
         height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
@@ -11,6 +11,6 @@ const Screen = ({children}) => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Screen
+export default Screen;
