@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import 'tailwindcss/tailwind.css'
+import "tailwindcss/tailwind.css";
 
 const setHeight = () => {
   let vh = window.innerHeight * 0.01;
